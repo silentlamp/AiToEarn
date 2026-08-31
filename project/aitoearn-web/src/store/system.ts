@@ -5,8 +5,6 @@ import { createPersistStore } from '@/utils/storage/createPersistStore'
 export type CalendarViewType = 'month' | 'week'
 
 export interface ISystemStore {
-  /** 是否永久禁用余额不足提示 */
-  disableLowBalanceAlert: boolean
   /** 是否永久禁用版本更新主动提醒 */
   disableAppReleaseModalAlert: boolean
   /** 日历视图类型（PC端） */
@@ -15,8 +13,6 @@ export interface ISystemStore {
   calendarShowSolarFestivals: boolean
   /** 月视图是否显示二十四节气 */
   calendarShowSolarTerms: boolean
-  /** 是否已关闭 Seedance 公告横幅 */
-  dismissSeedanceBanner: boolean
   /** 我的任务当前选中的 Tab */
   myTasksTab: 'accepted' | 'published'
   /** GitHub Stars 缓存值 */
@@ -32,12 +28,10 @@ export interface ISystemStore {
 }
 
 const state: ISystemStore = {
-  disableLowBalanceAlert: false,
   disableAppReleaseModalAlert: false,
   calendarViewType: 'week',
   calendarShowSolarFestivals: true,
   calendarShowSolarTerms: true,
-  dismissSeedanceBanner: false,
   myTasksTab: 'accepted',
   githubStars: '11.5k',
   githubStarsUpdatedAt: 0,
@@ -56,12 +50,6 @@ export const useSystemStore = createPersistStore(
   },
   (set, _get) => {
     const methods = {
-      /**
-       * 设置是否永久禁用余额不足提示
-       */
-      setDisableLowBalanceAlert(disabled: boolean) {
-        set({ disableLowBalanceAlert: disabled })
-      },
       /**
        * 设置是否永久禁用版本更新主动提醒
        */
@@ -85,12 +73,6 @@ export const useSystemStore = createPersistStore(
        */
       setCalendarShowSolarTerms(show: boolean) {
         set({ calendarShowSolarTerms: show })
-      },
-      /**
-       * 设置是否已关闭 Seedance 公告横幅
-       */
-      setDismissSeedanceBanner(dismissed: boolean) {
-        set({ dismissSeedanceBanner: dismissed })
       },
       /**
        * 设置我的任务当前选中的 Tab
@@ -131,36 +113,20 @@ export const useSystemStore = createPersistStore(
         delete persistedState.batchImageCount
         delete persistedState.batchImageSize
       }
-      // v3→v4: 重置 dismissSeedanceBanner 以显示新的视频模型促销 banner
-      if (version < 4) {
-        persistedState.dismissSeedanceBanner = false
-      }
       if (version < 5) {
         delete persistedState.createTaskDescExpanded
-      }
-      // v5→v6: 重置 dismissSeedanceBanner 以显示新的 gpt image 2 公告 banner
-      if (version < 6) {
-        persistedState.dismissSeedanceBanner = false
-      }
-      // v6→v7: 重置 dismissSeedanceBanner 以显示新的 gpt image 2 限时免费公告 banner
-      if (version < 7) {
-        persistedState.dismissSeedanceBanner = false
-      }
-      // v8→v9: 重置 dismissSeedanceBanner 以显示新的 gpt-image-2 价格公告 banner
-      if (version < 9) {
-        persistedState.dismissSeedanceBanner = false
       }
       // v9→v10: 新增版本更新主动提醒禁用状态
       if (version < 10) {
         persistedState.disableAppReleaseModalAlert = false
       }
-      // v10→v11: 重置 dismissSeedanceBanner，确保关闭过的用户可以重新看到当前公告
-      if (version < 11) {
-        persistedState.dismissSeedanceBanner = false
-      }
       if (version < 12) {
         persistedState.disableAgentTestingNotice = false
       }
+
+      // 清理已废弃的 credits/seedance/lowBalance 字段
+      delete persistedState.disableLowBalanceAlert
+      delete persistedState.dismissSeedanceBanner
 
       const persistedKeys = Object.keys(persistedState)
       const currentKeys = new Set([...Object.keys(state), 'lastUpdateTime', '_hasHydrated'])

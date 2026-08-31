@@ -5,7 +5,6 @@ import { useShallow } from 'zustand/react/shallow'
 import { agentApi } from '@/api/ai/ai.api'
 import { useAgentStore } from '@/store/agent'
 import { getDefaultTaskData } from '@/store/agent/agent.state'
-import { useUserStore } from '@/store/user'
 import { toast } from '@/utils/ui/toast'
 import { convertMessages, isTaskCompleted } from '../utils'
 import { useTaskPolling } from './useTaskPolling'
@@ -65,9 +64,6 @@ export function useChatState(options: IChatStateOptions): IChatStateReturn {
   const storeWorkflowSteps = currentTaskData.workflowSteps
   const storeIsGenerating = currentTaskData.isGenerating
   const storeProgress = currentTaskData.progress
-
-  // 获取 Credits 余额
-  const fetchCreditsBalance = useUserStore(state => state.fetchCreditsBalance)
 
   // 判断是否为活跃任务
   const isActiveTask = currentTaskId === taskId
@@ -191,9 +187,6 @@ export function useChatState(options: IChatStateOptions): IChatStateReturn {
             }
           }
 
-          // 获取到 result 后，刷新 Credits 余额
-          fetchCreditsBalance()
-
           hasLoadedRef.current = true
         }
         else {
@@ -210,7 +203,7 @@ export function useChatState(options: IChatStateOptions): IChatStateReturn {
     }
 
     loadTask()
-  }, [taskId, storeMessages.length, t, setMessages, startPolling, fetchCreditsBalance])
+  }, [taskId, storeMessages.length, t, setMessages, startPolling])
 
   // 计算最终显示的消息和状态
   // 优先使用 store 中的消息（支持任务缓存和实时更新）

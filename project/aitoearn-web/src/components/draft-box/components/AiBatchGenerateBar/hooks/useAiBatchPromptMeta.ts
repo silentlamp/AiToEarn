@@ -3,7 +3,7 @@ import type { DraftContentType, VideoModelInfo } from '@/api/ai/ai.types'
 import { useMemo } from 'react'
 import { buildMediaAcceptTypes } from '@/utils/media'
 import {
-  getPromptsExploreSlugByCreditsScope,
+  getPromptsExploreSlug,
   PROMPTS_EXPLORE_LNG_MAP,
 } from '../utils/helpers'
 
@@ -35,11 +35,11 @@ export function useAiBatchPromptMeta({
 }: UseAiBatchPromptMetaParams) {
   const promptsExploreUrl = useMemo(() => {
     const lngPath = PROMPTS_EXPLORE_LNG_MAP[lng]
-    const promptSlug = getPromptsExploreSlugByCreditsScope(currentVideoModelInfo?.creditsScope)
+    const promptSlug = getPromptsExploreSlug()
     return lngPath
       ? `https://youmind.com/${lngPath}/${promptSlug}`
       : `https://youmind.com/${promptSlug}`
-  }, [currentVideoModelInfo?.creditsScope, lng])
+  }, [lng])
 
   const placeholder = useMemo(() => {
     const limitParts: string[] = []

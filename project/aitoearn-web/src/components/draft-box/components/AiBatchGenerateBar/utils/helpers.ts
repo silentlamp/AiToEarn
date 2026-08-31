@@ -6,7 +6,6 @@ import {
   getImageModelsCommonResolutions,
   getNearestVideoPricing,
   getVideoModelAspectRatios,
-  getVideoModelCreditsScope,
   getVideoModelDefaultResolution,
   getVideoModelDurationLimits,
   getVideoModelResolutions,
@@ -310,32 +309,6 @@ export function getVideoModelsCredits(
   return Math.ceil(total * quantity * 100) / 100
 }
 
-export function getVideoCreditsByScope(
-  models: VideoModelInfo[],
-  params: Record<string, VideoModelParams>,
-  isVideoEditMode: boolean,
-  quantity: number,
-) {
-  const totals = models.reduce(
-    (result, model) => {
-      const credits = getVideoModelCredits(model, params, isVideoEditMode)
-      if (getVideoModelCreditsScope(model) === 'seedance') {
-        result.seedance += credits
-      }
-      else {
-        result.general += credits
-      }
-      return result
-    },
-    { general: 0, seedance: 0 },
-  )
-
-  return {
-    general: Math.ceil(totals.general * quantity * 100) / 100,
-    seedance: Math.ceil(totals.seedance * quantity * 100) / 100,
-  }
-}
-
 export function getVideoModelResolutionMap(models: VideoModelInfo[], stored: Record<string, string>) {
   const map: Record<string, string> = {}
   models.forEach((model) => {
@@ -546,10 +519,7 @@ export const PROMPTS_EXPLORE_LNG_MAP: Record<string, string> = {
 }
 
 const DEFAULT_PROMPTS_EXPLORE_SLUG = 'grok-imagine-prompts'
-const SEEDANCE_PROMPTS_EXPLORE_SLUG = 'seedance-2-0-prompts'
 
-export function getPromptsExploreSlugByCreditsScope(creditsScope?: VideoModelInfo['creditsScope']) {
-  if (creditsScope === 'seedance')
-    return SEEDANCE_PROMPTS_EXPLORE_SLUG
+export function getPromptsExploreSlug() {
   return DEFAULT_PROMPTS_EXPLORE_SLUG
 }

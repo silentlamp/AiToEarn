@@ -6,7 +6,6 @@
 
 ## 文件清单
 
-- `credits.types.ts`
 - `material.types.ts`
 
 ## 接口清单
@@ -19,7 +18,6 @@
 
 | 名称                | 类型        | 说明                                           |
 | ------------------- | ----------- | ---------------------------------------------- |
-| `CreditsScope`      | `type`      | 积分适用范围：通用积分或 Seedance 专用积分。   |
 | `MaterialMedia`     | `interface` | 素材媒体项，供素材库与公开推广码素材接口复用。 |
 | `MaterialMediaType` | `type`      | 素材媒体类型。                                 |
 

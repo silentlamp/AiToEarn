@@ -1,4 +1,3 @@
-import type { CreditsScope } from '../_shared/credits.types'
 import type { AgentTaskStatus, MediaType } from './ai.constants'
 import type { PlatType } from '@/app/config/platConfig'
 
@@ -144,7 +143,6 @@ export interface VideoModelInfo {
   name: string
   description: string
   channel: string
-  creditsScope?: CreditsScope
   modes: string[]
   resolutions: string[]
   durations: number[]

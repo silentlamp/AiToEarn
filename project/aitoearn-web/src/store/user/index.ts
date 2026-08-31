@@ -27,13 +27,6 @@ export interface IUserStore {
   userInfo?: Partial<UserInfo>
   isAddAccountPorxy: boolean
   lang: string
-  creditsBalance: number
-  creditsLoading: boolean
-  creditsInitialized: boolean
-  seedanceCreditsBalance: number
-  seedanceCreditsAvailableBalance: number
-  seedanceCreditsLoading: boolean
-  seedanceCreditsInitialized: boolean
   sidebarCollapsed: boolean
   defaultPlanId?: string
   hasEverLoggedIn: boolean
@@ -44,13 +37,6 @@ const state: IUserStore = {
   userInfo: {},
   isAddAccountPorxy: false,
   lang: i18next.language || 'en',
-  creditsBalance: 0,
-  creditsLoading: false,
-  creditsInitialized: false,
-  seedanceCreditsBalance: 0,
-  seedanceCreditsAvailableBalance: 0,
-  seedanceCreditsLoading: false,
-  seedanceCreditsInitialized: false,
   sidebarCollapsed: false,
   defaultPlanId: undefined,
   hasEverLoggedIn: false,
@@ -76,8 +62,6 @@ export const useUserStore = createPersistStore(
         set({
           token,
           hasEverLoggedIn: true,
-          creditsInitialized: false,
-          seedanceCreditsInitialized: false,
         })
       },
       setUserInfo(userInfo: UserInfo) {
@@ -97,27 +81,6 @@ export const useUserStore = createPersistStore(
           return res.data
         }
       },
-      async fetchCreditsBalance() {
-        set({ creditsInitialized: true })
-      },
-      setCreditsBalance(balance: number) {
-        set({ creditsBalance: balance, creditsInitialized: true })
-      },
-      fetchSeedanceCreditsBalance() {
-        const balance = _get().creditsBalance
-        set({
-          seedanceCreditsBalance: balance,
-          seedanceCreditsAvailableBalance: balance,
-          seedanceCreditsInitialized: true,
-        })
-      },
-      setSeedanceCreditsBalance(balance: number) {
-        set({
-          seedanceCreditsBalance: balance,
-          seedanceCreditsAvailableBalance: balance,
-          seedanceCreditsInitialized: true,
-        })
-      },
       setSidebarCollapsed(collapsed: boolean) {
         set({ sidebarCollapsed: collapsed })
       },
@@ -131,14 +94,7 @@ export const useUserStore = createPersistStore(
   {
     name: 'User',
     partialize: (storeState) => {
-      const {
-        creditsInitialized,
-        creditsLoading,
-        seedanceCreditsInitialized,
-        seedanceCreditsLoading,
-        ...rest
-      } = storeState
-      return rest as typeof storeState
+      return storeState
     },
   },
   'localStorage',

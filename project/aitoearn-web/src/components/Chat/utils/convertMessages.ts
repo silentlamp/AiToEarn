@@ -248,14 +248,14 @@ export function convertMessages(messages: TaskMessage[]): IDisplayMessage[] {
     }
     else if (msg.type === 'error') {
       if (msg.code === 12001) {
-        // 积分不足：创建 insufficientCredits action 卡片
+        // 错误码 12001：显示错误消息
         saveStepsToMessage()
         displayMessages.push({
           id: `error-${index}`,
           role: 'assistant',
           content: '',
           status: 'done',
-          actions: [{ type: 'insufficientCredits' }],
+          actions: [{ type: 'errorOnly', title: '请求失败', description: msg.message || '请求失败，请稍后重试。' }],
         })
         lastAssistantMsgIndex = displayMessages.length - 1
       }

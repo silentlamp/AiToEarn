@@ -17,7 +17,6 @@ import { useAccountStore } from '@/store/account'
 import { usePlanDetailStore } from '@/store/draft-box/planDetailStore'
 import { getPlatformInfoSync } from '@/store/platformMetadata'
 import { isPlatformAvailable } from '@/store/platformMetadata/utils'
-import { useUserStore } from '@/store/user'
 import { useGenerationPolling } from '../../hooks/useGenerationPolling'
 import AiBatchGenerateBar from '../AiBatchGenerateBar'
 import { useMediaTabStore } from '../ContentTabs/mediaTabStore'
@@ -125,7 +124,6 @@ function DraftContentModule({
         useMediaTabStore.getState().silentRefresh(selectedPlanId)
         useMediaTabStore.getState().silentRefreshAll(selectedPlanId, selectedPlanId)
       }
-      useUserStore.getState().fetchCreditsBalance()
     },
     onCountUpdate: updateGeneratingCount,
   })
@@ -178,7 +176,6 @@ function DraftContentModule({
     if (selectedPlanId) {
       fetchMaterials(selectedPlanId, 1)
     }
-    useUserStore.getState().fetchCreditsBalance()
   }, [fetchMaterials, selectedPlanId])
 
   return (

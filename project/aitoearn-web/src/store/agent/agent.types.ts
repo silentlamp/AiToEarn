@@ -144,7 +144,6 @@ export type ActionType
     | 'createChannel'
     | 'platformNotSupported'
     | 'errorOnly'
-    | 'insufficientCredits'
 
 /** 平台类型 */
 export type PlatformType

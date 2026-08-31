@@ -7,7 +7,7 @@
 'use client'
 
 import type { IActionCard } from '@/store/agent/agent.types'
-import { AlertCircle, ArrowRight, CreditCard, Link2, RefreshCw, Send } from 'lucide-react'
+import { AlertCircle, ArrowRight, Link2, RefreshCw, Send } from 'lucide-react'
 import { useParams, usePathname, useRouter } from 'next/navigation'
 import { useCallback } from 'react'
 import { useShallow } from 'zustand/react/shallow'
@@ -93,17 +93,6 @@ export function ActionCard({ action, className }: IActionCardProps) {
   // 根据 action 类型获取配置
   const getActionConfig = (): IActionConfig | null => {
     switch (action.type) {
-      case 'insufficientCredits':
-        return {
-          icon: <CreditCard className="w-5 h-5" />,
-          title: t('action.insufficientCredits') || '积分不足',
-          description: t('action.insufficientCreditsDesc') || '任务已暂停，请充值积分后继续。',
-          buttonText: t('action.rechargeCredits') || '充值积分',
-          bgClass:
-            'bg-gradient-to-br from-amber-50 to-yellow-50 dark:from-amber-950/30 dark:to-yellow-950/30',
-          borderClass: 'border-amber-200 dark:border-amber-800',
-          iconClass: 'text-amber-600 dark:text-amber-400 bg-amber-100 dark:bg-amber-900/50',
-        }
       case 'errorOnly':
         return {
           icon: <AlertCircle className="w-5 h-5" />,
@@ -225,9 +214,6 @@ export function ActionCard({ action, className }: IActionCardProps) {
     const platform = action.platform || ''
 
     switch (action.type) {
-      case 'insufficientCredits':
-        useAccountStore.getState().setLowBalanceAlertOpen(true)
-        return
       case 'createChannel':
         // 未登录时跳转登录页
         if (!token) {

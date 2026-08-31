@@ -267,7 +267,7 @@ export function createStoreMethods(ctx: IMethodsContext) {
             console.error('[AgentStore] TaskInstance SSE Error:', error)
           },
           onComplete: () => {
-            useUserStore.getState().fetchCreditsBalance()
+            // Task completed
           },
         }
 
@@ -294,7 +294,6 @@ export function createStoreMethods(ctx: IMethodsContext) {
             instance.setIsGenerating(false)
             instance.clearWorkflowSteps()
             refs.sseAbort.value = null
-            useUserStore.getState().fetchCreditsBalance()
           },
         )
 
@@ -436,7 +435,7 @@ export function createStoreMethods(ctx: IMethodsContext) {
             console.error('[AgentStore] TaskInstance SSE Error:', error)
           },
           onComplete: () => {
-            useUserStore.getState().fetchCreditsBalance()
+            // Task completed
           },
         }
 
@@ -459,7 +458,6 @@ export function createStoreMethods(ctx: IMethodsContext) {
             instance!.setIsGenerating(false)
             instance!.clearWorkflowSteps()
             refs.sseAbort.value = null
-            useUserStore.getState().fetchCreditsBalance()
           },
         )
 

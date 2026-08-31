@@ -311,20 +311,22 @@ async function handleErrorMessage(
       saveCurrentStepToMessage(ctx)
     }
 
-    // 积分不足：在聊天中显示卡片，不跳转
-    const insufficientMsg: IDisplayMessage = {
-      id: `assistant-insufficient-${Date.now()}`,
+    // 显示错误消息
+    const errorMsg: IDisplayMessage = {
+      id: `assistant-error-${Date.now()}`,
       role: 'assistant',
       content: '',
       status: 'done',
       createdAt: Date.now(),
       actions: [
         {
-          type: 'insufficientCredits',
+          type: 'errorOnly',
+          title: '请求失败',
+          description: errorMessage,
         },
       ],
     }
-    ctx.addMessage(insufficientMsg)
+    ctx.addMessage(errorMsg)
   }
   else {
     // 其他错误：创建错误消息

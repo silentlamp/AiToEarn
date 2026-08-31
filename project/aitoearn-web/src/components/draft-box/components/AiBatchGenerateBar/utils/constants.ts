@@ -1,9 +1,8 @@
 /**
  * AI 批量生成 - 模型配置常量
- * 积分与时长等动态数据已由 pricing API 驱动，此处仅保留 API 不提供的静态配置
+ * 定价等动态数据已由 pricing API 驱动，此处仅保留 API 不提供的静态配置
  */
 
-import type { CreditsScope } from '@/api/_shared/credits.types'
 import type { ImageModelInfo, VideoModelInfo, VideoModelInputConstraint, VideoModelPricing } from '@/api/ai/ai.types'
 
 /** 根据比例字符串（如 "9:16"）计算预览方块的 w/h（缩放到合适的 UI 尺寸） */
@@ -14,16 +13,6 @@ export function ratioToPreviewSize(label: string): { w: number, h: number } {
   const maxDim = 18
   const scale = maxDim / Math.max(a, b)
   return { w: Math.round(a * scale), h: Math.round(b * scale) }
-}
-
-export function getVideoModelCreditsScope(model?: VideoModelInfo): CreditsScope {
-  if (model?.creditsScope === 'seedance')
-    return 'seedance'
-  return 'general'
-}
-
-export function isSeedanceCreditsModel(model?: VideoModelInfo): boolean {
-  return getVideoModelCreditsScope(model) === 'seedance'
 }
 
 // ==================== 视频模型配置 ====================
