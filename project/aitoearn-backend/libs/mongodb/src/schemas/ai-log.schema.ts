@@ -506,6 +506,22 @@ export class AiLog extends WithTimestampSchema {
 
   @Prop({
     required: false,
+    type: Number,
+  })
+  cost?: number
+
+  @Prop({
+    required: false,
+    type: Object,
+  })
+  costBreakdown?: {
+    inputCost?: number
+    outputCost?: number
+    currency?: string
+  }
+
+  @Prop({
+    required: false,
     type: Object,
   })
   errorMessage?: string

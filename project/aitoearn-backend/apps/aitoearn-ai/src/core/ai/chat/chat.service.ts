@@ -8,6 +8,7 @@ import { AssetsService } from '@yikart/assets'
 import { AppException, getErrorMessage, getErrorStack, ResponseCode, UserType } from '@yikart/common'
 import { AiLogChannel, AiLogRepository, AiLogStatus, AiLogType, AssetType } from '@yikart/mongodb'
 import OpenAI from 'openai'
+import { calculateAiCost } from '../ai-cost.util'
 import { from, merge, Observable } from 'rxjs'
 import { catchError, concatMap, ignoreElements, last, share } from 'rxjs/operators'
 import { config } from '../../../config'
@@ -168,6 +169,7 @@ export class ChatService {
     })
 
     const duration = Date.now() - startedAt.getTime()
+    const costResult = calculateAiCost(params.model, usage.input_tokens, usage.output_tokens)
 
     await this.aiLogRepo.create({
       userId,
@@ -180,6 +182,12 @@ export class ChatService {
       request: params as unknown as Record<string, unknown>,
       response: result,
       status: AiLogStatus.Success,
+      cost: costResult.cost,
+      costBreakdown: {
+        inputCost: costResult.inputCost,
+        outputCost: costResult.outputCost,
+        currency: 'USD',
+      },
     })
   }
 

@@ -816,6 +816,10 @@ export class AgentRuntimeService {
           request: {},
           response: { modelUsage, taskResult },
           status: AiLogStatus.Success,
+          cost: (chunk as any).total_cost_usd,
+          costBreakdown: {
+            currency: 'USD',
+          },
         })
       }
 

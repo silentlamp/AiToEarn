@@ -15,6 +15,12 @@ const logItemSchema = z.object({
   status: z.enum(AiLogStatus).describe('日志状态'),
   startedAt: z.coerce.date().describe('开始时间'),
   duration: z.number().optional().describe('持续时间'),
+  cost: z.number().optional().describe('本次请求费用(USD)'),
+  costBreakdown: z.object({
+    inputCost: z.number().optional(),
+    outputCost: z.number().optional(),
+    currency: z.string().optional(),
+  }).optional().describe('费用明细'),
   createdAt: z.coerce.date().describe('创建时间'),
   updatedAt: z.coerce.date().describe('更新时间'),
 })
