@@ -305,30 +305,6 @@ pnpm run dev
 
 </details>
 
-<details>
-<summary>🖥️ Electronデスクトッププロジェクトを起動</summary>
-
-```bash
-# リポジトリをクローン
-git clone https://github.com/yikart/AttAiToEarn.git
-
-# ディレクトリに移動
-cd AttAiToEarn
-
-# 依存関係をインストール
-npm install
-
-# sqliteをコンパイル（better-sqlite3にはnode-gypとローカルPythonが必要）
-npm run rebuild
-
-# 開発を起動
-npm run dev
-```
-
-ElectronプロジェクトはAiToEarnのデスクトップクライアントを提供します。
-
-</details>
-
 ## 貢献ガイド
 
 参加するには[貢献ガイド](./CONTRIBUTING.md)をご覧ください。

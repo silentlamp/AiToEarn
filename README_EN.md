@@ -299,30 +299,6 @@ pnpm run dev
 
 </details>
 
-<details>
-<summary>🖥️ Start Electron desktop project</summary>
-
-```bash
-# Clone the repo
-git clone https://github.com/yikart/AttAiToEarn.git
-
-# Enter directory
-cd AttAiToEarn
-
-# Install dependencies
-npm install
-
-# Compile sqlite (better-sqlite3 requires node-gyp and local Python)
-npm run rebuild
-
-# Start development
-npm run dev
-```
-
-The Electron project provides a desktop client for AiToEarn.
-
-</details>
-
 ## Contributing
 
 Please see [Contributing Guide](./CONTRIBUTING.md) to get started.

@@ -306,30 +306,6 @@ pnpm run dev
 
 </details>
 
-<details>
-<summary>🖥️ 启动 Electron 桌面项目</summary>
-
-```bash
-# 克隆仓库
-git clone https://github.com/yikart/AttAiToEarn.git
-
-# 进入目录
-cd AttAiToEarn
-
-# 安装依赖
-npm install
-
-# 编译 sqlite（better-sqlite3 需要 node-gyp 和本地 Python）
-npm run rebuild
-
-# 启动开发
-npm run dev
-```
-
-Electron 项目为 AiToEarn 提供桌面客户端。
-
-</details>
-
 ## 贡献指南
 
 请查看 [贡献指南](./CONTRIBUTING.md) 开始参与。
