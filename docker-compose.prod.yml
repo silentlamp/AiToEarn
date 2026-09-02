@@ -1,0 +1,75 @@
+# VPS production overlay — use with docker-compose.yml
+# Shared Mirai RustFS at mirai-rustfs (tako-network). No compose nginx on VPS.
+#
+# Usage:
+#   docker compose -f docker-compose.yml -f docker-compose.prod.yml --env-file .env.prod pull
+#   docker compose -f docker-compose.yml -f docker-compose.prod.yml --env-file .env.prod up -d
+
+name: aitoearn
+
+services:
+  mongodb:
+    ports: !reset []
+
+  mongodb-rs-init:
+    restart: "no"
+
+  redis:
+    ports: !reset []
+
+  rustfs:
+    profiles: ["local-rustfs"]
+
+  rustfs-init:
+    profiles: ["local-rustfs"]
+
+  aitoearn-init:
+    profiles: ["dev-auto-login"]
+
+  aitoearn-ai:
+    image: ${DOCKER_IMAGE_PREFIX:-lain4504}/aitoearn-ai:${IMAGE_TAG:-latest}
+    pull_policy: always
+    ports:
+      - "127.0.0.1:3012:3010"
+    networks:
+      - aitoearn-network
+
+  aitoearn-server:
+    image: ${DOCKER_IMAGE_PREFIX:-lain4504}/aitoearn-server:${IMAGE_TAG:-latest}
+    pull_policy: always
+    ports:
+      - "127.0.0.1:3006:3002"
+    depends_on: !override
+      mongodb:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      aitoearn-ai:
+        condition: service_healthy
+    networks:
+      - aitoearn-network
+
+  aitoearn-web:
+    image: ${DOCKER_IMAGE_PREFIX:-lain4504}/aitoearn-web:${IMAGE_TAG:-latest}
+    pull_policy: always
+    ports:
+      - "127.0.0.1:3004:3000"
+    command: ["node", "server.js"]
+    volumes: !reset []
+    depends_on: !override
+      aitoearn-server:
+        condition: service_healthy
+    networks:
+      - aitoearn-network
+    environment:
+      NODE_ENV: production
+      NEXT_TELEMETRY_DISABLED: 1
+
+  nginx:
+    profiles: ["compose-nginx"]
+    ports: !reset []
+
+networks:
+  aitoearn-network:
+    name: tako-network
+    external: true

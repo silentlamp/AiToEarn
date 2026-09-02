@@ -111,7 +111,7 @@ services:
       "
 
   aitoearn-ai:
-    image: aitoearn/aitoearn-ai:latest
+    image: ${DOCKER_IMAGE_PREFIX:-aitoearn}/aitoearn-ai:${IMAGE_TAG:-latest}
     pull_policy: always
     container_name: aitoearn-ai
     restart: unless-stopped
@@ -132,7 +132,7 @@ services:
       start_period: 60s
 
   aitoearn-server:
-    image: aitoearn/aitoearn-server:latest
+    image: ${DOCKER_IMAGE_PREFIX:-aitoearn}/aitoearn-server:${IMAGE_TAG:-latest}
     pull_policy: always
     container_name: aitoearn-server
     restart: unless-stopped
@@ -155,7 +155,7 @@ services:
       start_period: 60s
 
   aitoearn-web:
-    image: aitoearn/aitoearn-web:latest
+    image: ${DOCKER_IMAGE_PREFIX:-aitoearn}/aitoearn-web:${IMAGE_TAG:-latest}
     pull_policy: always
     container_name: aitoearn-web
     restart: unless-stopped
