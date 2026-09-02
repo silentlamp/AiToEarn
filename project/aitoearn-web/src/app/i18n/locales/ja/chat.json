@@ -11,13 +11,6 @@
     "loadFailed": "読み込みに失敗しました",
     "connectionInterrupted": "接続が中断されました"
   },
-  "error": {
-    "insufficientCredits": {
-      "title": "エージェントクレジット不足",
-      "content": "エージェントクレジットが不足しています。メンバーシップにご登録ください",
-      "okText": "OK"
-    }
-  },
   "agentNotice": {
     "title": "ご案内",
     "description": "この Agent は現在もテスト段階です。機能と生成品質は継続的に改善中のため、結果が不安定になったり、期待と完全には一致しない場合があります。関連するクレジットは実際の使用状況に応じて通常どおり消費され、生成結果の差異によるクレジットの返還や補償は現在できません。まずは少量でお試しいただき、継続利用をご判断ください。ご理解とご協力に感謝いたします。",
@@ -54,7 +47,6 @@
     "defaultImageGroup": "デフォルト画像グループ",
     "defaultVideoGroup": "デフォルト動画グループ",
     "materialLibrary": "メディアライブラリ",
-    "affiliateReward": "$716.4を獲得",
     "imageMaterial": "画像",
     "videoMaterial": "動画",
     "agentAssets": "AI生成素材",
@@ -174,9 +166,6 @@
     "readyToPublish": "公開準備完了",
     "readyToPublishDesc": "コンテンツの準備が整い、{{platform}}に公開できます。",
     "goPublish": "公開する",
-    "insufficientCredits": "クレジット不足",
-    "insufficientCreditsDesc": "タスクが一時停止しました。続行するにはクレジットをチャージしてください。",
-    "rechargeCredits": "クレジットをチャージ",
     "action": "アクション",
     "actionDesc": "以下のアクションを完了してください",
     "continue": "続ける"

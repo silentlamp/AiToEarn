@@ -5,22 +5,6 @@
   "login": "Login",
   "support": "Support",
   "settings": "Settings",
-  "vip": "Plus",
-  "vip.tier": {
-    "free": "Free",
-    "trialing": "Trial",
-    "go": "Go",
-    "plus": "Plus",
-    "ultra": "Ultra",
-    "fortune": "Fortune Member",
-    "treasure": "Treasure Member"
-  },
-  "subscribe": "Upgrade",
-  "balance": "Credits",
-  "recharge": "Recharge",
-  "adBalance": "Advertiser Balance",
-  "creatorBalance": "Creator Balance",
-  "withdrawable": "Withdrawable",
   "plugin": "Extension",
   "advertiser": "AI Check-in",
   "pluginStatus": {
@@ -83,8 +67,6 @@
   },
   "header": {
     "messages": "Messages",
-    "income": "Income Records",
-    "wallet": "My Wallet",
     "materialLibrary": "Library",
     "draftBox": "Content Management",
     "agentAssets": "AI Generated Assets",
@@ -92,24 +74,6 @@
     "draftBoxSeoDescription": "Manage all your content drafts in one place. Use AI to batch generate social media posts, edit drafts before publishing, and organize content for multi-platform distribution with AiToEarn.",
     "draftBoxSeoKeywords": "content management, draft editor, AI content generation, batch content creation, social media drafts, content scheduling, AiToEarn",
     "brandPromotion": "AI Check-in"
-  },
-  "tasks": "Marketplace",
-  "signIn": {
-    "title": "Daily Sign-in to Earn Points",
-    "myPoints": "My Points",
-    "signIn": "Sign In",
-    "today": "Today",
-    "rules": "Sign-in Rules",
-    "rules1": "Consecutive sign-ins 1-7 days, 1 point per day",
-    "rules2": "Consecutive sign-ins 8-21 days, 2 points per day",
-    "rules3": "Consecutive sign-ins 22 days or more, 3 points per day",
-    "signedIn": "Signed In",
-    "notSignedIn": "Not Signed In",
-    "signInSuccess": "Sign-in successful",
-    "signInFailed": "Sign-in failed",
-    "alreadySignedIn": "Already signed in today",
-    "consecutiveDays": "Consecutive Days",
-    "totalPoints": "Total Points"
   },
   "downloadApp": {
     "title": "Download {{appName}}",
@@ -126,9 +90,6 @@
     "downloadNow": "Download Now",
     "tip": "💡 Tip: After installation, please log in to your account in the App, then try the related operation again"
   },
-  "networkBusy": "Network busy, please try again later!",
-  "networkError": "Network error, please try again later!",
-  "contact": "Need help? Contact support:",
   "websit": {
     "termsOfService": {
       "title": "Terms of Service",
@@ -189,16 +150,9 @@
       "importantNoteContent": "Data cannot be recovered after deletion. Please proceed with caution. Some data required by law may not be deletable."
     }
   },
-  "lowBalanceAlert": {
-    "title": "Low Balance Alert",
-    "content": "Your credits balance is running low. Please top up to continue using our services.",
-    "neverRemind": "Don't remind me again"
-  },
-  "announcementBanner": {
-    "seedancePromo": "seedance-2.0 as low as $0.03/sec",
-    "videoPromo": "Limited-time offer: seedance as low as 0.36 yuan/sec, gpt-image-2 as low as 0.07 yuan/image",
-    "videoPromoFallback": "Limited-time offer: seedance as low as 0.36 yuan/sec, gpt-image-2 as low as 0.07 yuan/image"
-  },
+  "networkBusy": "Network busy, please try again later!",
+  "networkError": "Network error, please try again later!",
+  "contact": "Need help? Contact support:",
   "chinaDomainPrompt": {
     "title": "Switch to China Region",
     "content": "We detected your location is in China. Switch to the China domain for a better experience?",
@@ -271,8 +225,6 @@
     "openInBrowser": "Open in Browser",
     "description": "WebViews in WeChat or Alipay may block publishing and redirects. Please continue in your browser."
   },
-  "seedanceCredits": "Seedance Credits",
-  "seedanceCreditsRecharge": "Recharge Seedance Credits",
   "configManagement": "Configuration",
   "apiErrorConfigTip": "Please check whether your configuration is correct.",
   "apiErrorConfigAction": "View configuration"

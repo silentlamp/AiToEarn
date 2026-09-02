@@ -5,15 +5,13 @@
   },
   "releaseBanner": {
     "tag": "Release v0.8.0",
-    "text": "Build and Extend AI Workflows with Plugins and a Thriving Marketplace."
+    "text": "Build and extend AI workflows with plugins and multi-platform publishing."
   },
   "header": {
     "logo": "Aitoearn",
     "nav": {
       "home": "Home",
-      "marketplace": "Marketplace",
-      "pricing": "Pricing",
-      "status": "Status",
+      "features": "Features",
       "docs": "Docs",
       "blog": "Blog",
       "download": "Downloads",
@@ -280,8 +278,8 @@
         "description": "AI Copywriting: Auto-generate titles, captions & descriptions. AI Commenting: Engage proactively, attract traffic. Image & Card Generator: Speed up content workflows. Supported AI Video Models and Image Models."
       },
       "marketplace": {
-        "title": "Content Marketplace — Trade & Monetize",
-        "description": "Creators: Sell your content directly, find buyers fast. Brands: Purchase ready-made, high-quality content. AI-Powered Growth: Let's use AI to earn. Let's earn money together!"
+        "title": "Multi-Channel Publishing",
+        "description": "Manage multiple YouTube and TikTok channels by niche. Schedule content, track drafts, and publish across platforms from one hub."
       }
     }
   },

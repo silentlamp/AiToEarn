@@ -16,13 +16,6 @@
     "loadFailed": "加载失败",
     "connectionInterrupted": "连接中断"
   },
-  "error": {
-    "insufficientCredits": {
-      "title": "Agent 积分不足",
-      "content": "您的 Agent 积分不足，请开通会员",
-      "okText": "确定"
-    }
-  },
   "agentNotice": {
     "title": "温馨提示",
     "description": "该 Agent 目前仍在测试阶段，功能和生成效果还在持续优化中，可能会出现结果不稳定或不完全符合预期的情况。相关积分会根据实际使用情况正常消耗，暂无法因生成结果差异提供积分退还或补偿。建议您先少量体验后再决定是否继续使用，感谢您的理解与支持。",
@@ -66,7 +59,6 @@
     "defaultImageGroup": "默认图片资源组",
     "defaultVideoGroup": "默认视频资源组",
     "materialLibrary": "媒体资源库",
-    "affiliateReward": "赚 $716.4",
     "imageMaterial": "图片素材",
     "videoMaterial": "视频素材",
     "agentAssets": "AI 生成素材",
@@ -189,9 +181,6 @@
     "readyToPublish": "准备发布",
     "readyToPublishDesc": "内容已准备好，可以发布到 {{platform}}。",
     "goPublish": "去发布",
-    "insufficientCredits": "积分不足",
-    "insufficientCreditsDesc": "任务已暂停，请充值积分后继续。",
-    "rechargeCredits": "充值积分",
     "action": "操作",
     "actionDesc": "请完成以下操作",
     "continue": "继续"

@@ -48,7 +48,7 @@ export interface SettingsModalProps {
  */
 export function SettingsModal({ open, onClose, defaultTab }: SettingsModalProps) {
   // 预加载所有子组件需要的 namespace，避免切换 tab 时闪烁
-  const { t } = useTransClient(['settings', 'profile'])
+  const { t } = useTransClient('settings')
   const token = useUserStore(state => state.token)
   const isLoggedIn = !!token
   const [activeTab, setActiveTab] = useState<SettingsTab>(isLoggedIn ? 'profile' : 'general')

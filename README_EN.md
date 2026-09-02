@@ -8,9 +8,9 @@
 
 English | [简体中文](README.md) | [日本語](README_JA.md)
 
-**Monetize · Publish · Engage · Create — all in one platform.**
+**Publish · Engage · Create — internal multi-channel ops.**
 
-AiToEarn helps OPCs (One-Person Companies), creators, brands, and businesses build, distribute, and monetize content with **AI-powered automation** across the world's most popular platforms.
+This fork is configured for personal/internal use: multi-channel YouTube and TikTok publishing with AI-assisted content creation. Billing, wallet, and marketplace features have been removed.
 
 Supported Channels:
 Douyin, Xiaohongshu (Rednote), Kuaishou, Bilibili, WeChat Channels, WeChat Official Accounts, TikTok, YouTube, Facebook, Instagram, Threads, Twitter (X), Pinterest, LinkedIn
@@ -56,25 +56,20 @@ Douyin, Xiaohongshu (Rednote), Kuaishou, Bilibili, WeChat Channels, WeChat Offic
 
 ## Key Features
 
-AiToEarn provides four core Agent capabilities around the creator's full monetization pipeline:
+AiToEarn provides three core Agent capabilities for internal creator operations:
 
-> **Monetize · Publish · Engage · Create**
+> **Publish · Engage · Create**
 
 ---
 
-### 💰 Monetize — Earn from Your Content
+### Internal Creator Ops — Multi-Channel Publishing
 
-The core mission of AiToEarn: **help every creator earn money**.
+This fork targets **multi-niche, multi-platform publishing** for personal use:
 
-Creators can sell content on the platform to complete brand promotion tasks. All settlements are results-driven, with three models:
-
-| Model | Full Name | Meaning |
-|-------|-----------|---------|
-| **CPS** | Cost Per Sale | Settle by transaction amount |
-| **CPE** | Cost Per Engagement | Settle by engagement count |
-| **CPM** | Cost Per Mille | Settle by view count |
-
-<img src="presentation/monetize-cn.png" width="30%">
+- **Account Groups (Spaces)**: one group per niche keyword (e.g. `life_hacks`, `ai_tools`)
+- **YouTube + TikTok**: connect accounts per niche, schedule via calendar
+- **Repurpose pipeline**: CN source → English dub (KrillinAI) → AiToEarn draft → publish
+- See [`INTERNAL_USE.md`](INTERNAL_USE.md) and [`ops/`](ops/) for runbooks
 
 ---
 

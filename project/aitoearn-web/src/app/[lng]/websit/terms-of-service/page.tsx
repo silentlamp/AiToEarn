@@ -94,9 +94,8 @@ export default function TermsOfServicePage() {
                 Aitoearn reserves the right to modify or discontinue all or any portion of the
                 Service at any time (including by limiting or discontinuing certain features of the
                 Service), temporarily or permanently, without notice to you. Aitoearn will have no
-                liability for any change to the Service, including any paid-for functionalities of
-                the Service, or any suspension or termination of your access to or use of the
-                Service. Service fees are not refundable.
+                liability for any change to the Service or any suspension or termination of your
+                access to or use of the Service.
               </p>
             </section>
 
@@ -130,30 +129,12 @@ export default function TermsOfServicePage() {
             </section>
 
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>4. Payment Terms</h2>
+              <h2 className={styles.sectionTitle}>4. Internal Deployment</h2>
               <p className={styles.sectionContent}>
-                Some features of the Service may require you to pay fees upon registering for the
-                applicable subscription. Before you pay any fees, you will have an opportunity to
-                review and accept the fees that you will be charged. All fees are in U.S. Dollars
-                and are non-refundable unless otherwise specifically provided for in these Terms.
-                Fees vary based on the plan, with different pricing schemes for individual users and
-                organizations.
-              </p>
-              <h3 className={styles.subSectionTitle}>4.1 Price</h3>
-              <p className={styles.sectionContent}>
-                Aitoearn reserves the right to determine pricing for the Service. Aitoearn will make
-                reasonable efforts to keep pricing information published on our website up to date.
-                We encourage you to check our pricing page periodically for current pricing
-                information. If you cancel your subscription you may forego your current price.
-              </p>
-              <h3 className={styles.subSectionTitle}>4.2 Authorization</h3>
-              <p className={styles.sectionContent}>
-                You authorize Aitoearn to charge all sums for the orders that you make and any level
-                of Service you select as described in these Terms or published by Aitoearn,
-                including all applicable taxes, to the payment method specified in your account. If
-                you pay any fees with a credit card, then Aitoearn may seek pre-authorization of
-                your credit card account prior to your purchase to verify that the credit card is
-                valid and has the necessary funds or credit available to cover your purchase.
+                This self-hosted deployment is for personal and internal use only. It does not
+                include subscription billing, wallet features, or marketplace monetization. AI and
+                platform API usage is billed directly by your configured providers (for example,
+                Google Gemini, Volcengine, or xAI), not by AiToEarn.
               </p>
             </section>
 

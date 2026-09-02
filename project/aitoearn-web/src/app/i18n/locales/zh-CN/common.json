@@ -5,22 +5,6 @@
   "login": "登录",
   "support": "支持",
   "settings": "设置",
-  "vip": "会员",
-  "vip.tier": {
-    "free": "免费版",
-    "trialing": "试用会员",
-    "go": "Go 会员",
-    "plus": "Plus 会员",
-    "ultra": "Ultra 会员",
-    "fortune": "招财会员",
-    "treasure": "聚宝会员"
-  },
-  "subscribe": "升级会员",
-  "balance": "积分",
-  "recharge": "充值",
-  "adBalance": "广告主余额",
-  "creatorBalance": "创作者余额",
-  "withdrawable": "可提现",
   "plugin": "浏览器插件",
   "advertiser": "AI打卡",
   "pluginStatus": {
@@ -53,7 +37,15 @@
   "yes": "是",
   "no": "否",
   "calendar": {
-    "weekDaysShort": ["日", "一", "二", "三", "四", "五", "六"],
+    "weekDaysShort": [
+      "日",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六"
+    ],
     "monthSuffix": "月"
   },
   "actions": {
@@ -83,8 +75,6 @@
   },
   "header": {
     "messages": "消息通知",
-    "income": "收入记录",
-    "wallet": "钱包账户",
     "materialLibrary": "素材库",
     "draftBox": "内容管理",
     "agentAssets": "AI 生成素材",
@@ -92,24 +82,6 @@
     "draftBoxSeoDescription": "在一个地方管理所有内容草稿。使用AI批量生成社媒帖子，发布前编辑草稿，用AiToEarn组织多平台分发内容。",
     "draftBoxSeoKeywords": "内容管理, 草稿编辑, AI内容生成, 批量创作, 社媒草稿, 内容排期, AiToEarn",
     "brandPromotion": "AI打卡"
-  },
-  "tasks": "内容市场",
-  "signIn": {
-    "title": "每日签到得积分",
-    "myPoints": "我的积分",
-    "signIn": "签到",
-    "today": "今天",
-    "rules": "签到规则",
-    "rules1": "连续签到 1-7天, 每天1积分",
-    "rules2": "连续签到 8-21天, 每天2积分",
-    "rules3": "连续签到 22天以上, 每天3积分",
-    "signedIn": "已签到",
-    "notSignedIn": "未签到",
-    "signInSuccess": "签到成功",
-    "signInFailed": "签到失败",
-    "alreadySignedIn": "今日已签到",
-    "consecutiveDays": "连续签到天数",
-    "totalPoints": "总积分"
   },
   "downloadApp": {
     "title": "下载{{appName}}",
@@ -186,16 +158,6 @@
       "importantNoteContent": "数据删除后无法恢复，请谨慎操作。某些法律要求保留的数据可能无法删除。"
     }
   },
-  "lowBalanceAlert": {
-    "title": "余额不足提醒",
-    "content": "您的积分余额不足，请及时充值以继续使用",
-    "neverRemind": "不再提示"
-  },
-  "announcementBanner": {
-    "seedancePromo": "seedance-2.0 低至0.03美元/秒",
-    "videoPromo": "限时优惠：seedance价格低至0.36元每秒，gpt-image-2价格低至0.07元每张图",
-    "videoPromoFallback": "限时优惠：seedance价格低至0.36元每秒，gpt-image-2价格低至0.07元每张图"
-  },
   "chinaDomainPrompt": {
     "title": "切换到中国区域",
     "content": "检测到您的位置在中国，是否要切换到中国区域域名以获得更好的体验？",
@@ -268,8 +230,6 @@
     "openInBrowser": "在浏览器中打开",
     "description": "微信或支付宝内打开可能影响发布和跳转，请切换到系统浏览器继续。"
   },
-  "seedanceCredits": "Seedance专用积分",
-  "seedanceCreditsRecharge": "充值Seedance专用积分",
   "configManagement": "配置管理",
   "apiErrorConfigTip": "请检查您的配置是否正确。",
   "apiErrorConfigAction": "点击查看配置"

@@ -149,10 +149,11 @@ export default function PrivacyPolicyPage() {
                 team or other communications that you may send us and their contents.
               </p>
 
-              <h3 className={styles.subSectionTitle}>Making a Purchase</h3>
+              <h3 className={styles.subSectionTitle}>Third-Party Integrations</h3>
               <p className={styles.sectionContent}>
-                When you make payments through the Service, you will need to provide Personal
-                Information such as your credit card number and billing address.
+                When you connect social media accounts or configure AI providers, we may collect
+                credentials and profile information required for publishing and content generation.
+                This self-hosted deployment does not process subscription payments through the Service.
               </p>
 
               <h3 className={styles.subSectionTitle}>Social Media</h3>

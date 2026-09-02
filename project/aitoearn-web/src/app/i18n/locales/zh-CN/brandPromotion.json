@@ -174,7 +174,6 @@
     },
     "platformIncompatibleCount": "{{count}} 个不兼容",
     "timeLimitedModelTip": "限时模型不保证可用性，如不可使用，可稍后再试或切换其他模型",
-    "seedanceCreditsEstimateWarning": "积分消耗仅为预估，会根据实际结果有一定波动",
     "draftModeOn": "生成草稿",
     "draftModeOffVideo": "生成视频",
     "draftModeOffImage": "生成图片",
@@ -196,11 +195,7 @@
     "copy": "复制",
     "copySuccess": "复制成功",
     "copyFailed": "复制失败，请手动复制",
-    "insufficientSeedanceCredits": "本次 Seedance 模型预计消耗{{total}}专用积分，当前专用积分{{balance}}，余额不足，请充值后重试！",
-    "seedanceCreditsBadge": "专用积分",
-    "seedanceCreditsUsageHint": "将优先使用 Seedance专用积分，预计消耗 {{total}}",
-    "seedanceCreditsRecharge": "去充值",
-    "seedanceCreditsInsufficientHint": "Seedance专用积分不足，预计消耗 {{total}}，当前 {{balance}}。"
+    "insufficientSeedanceCredits": "本次 Seedance 模型预计消耗{{total}}专用积分，当前专用积分{{balance}}，余额不足，请充值后重试！"
   },
   "tabs": {
     "overview": "概览",

@@ -11,13 +11,6 @@
     "loadFailed": "Échec du chargement",
     "connectionInterrupted": "Connexion interrompue"
   },
-  "error": {
-    "insufficientCredits": {
-      "title": "Crédits Agent insuffisants",
-      "content": "Vos crédits Agent sont insuffisants, veuillez souscrire à un abonnement",
-      "okText": "OK"
-    }
-  },
   "agentNotice": {
     "title": "Rappel amical",
     "description": "Cet Agent est encore en phase de test. Ses fonctionnalités et la qualité des générations sont continuellement optimisées ; les résultats peuvent donc être instables ou ne pas correspondre entièrement aux attentes. Les crédits liés seront consommés normalement selon l'utilisation réelle, et aucun remboursement ni compensation ne peut actuellement être accordé pour les différences de résultats générés. Nous vous recommandons de commencer par un petit essai avant de décider de poursuivre. Merci de votre compréhension et de votre soutien.",
@@ -54,7 +47,6 @@
     "defaultImageGroup": "Groupe d'images par défaut",
     "defaultVideoGroup": "Groupe vidéo par défaut",
     "materialLibrary": "Médiathèque",
-    "affiliateReward": "Gagnez 716,4 $",
     "imageMaterial": "Images",
     "videoMaterial": "Vidéos",
     "agentAssets": "Ressources générées par l'IA",
@@ -174,9 +166,6 @@
     "readyToPublish": "Prêt à publier",
     "readyToPublishDesc": "Le contenu est prêt et peut être publié sur {{platform}}.",
     "goPublish": "Publier",
-    "insufficientCredits": "Crédits insuffisants",
-    "insufficientCreditsDesc": "Tâche en pause. Veuillez recharger vos crédits pour continuer.",
-    "rechargeCredits": "Recharger les crédits",
     "action": "Action",
     "actionDesc": "Veuillez compléter l'action suivante",
     "continue": "Continuer"

@@ -11,13 +11,6 @@
     "loadFailed": "Laden fehlgeschlagen",
     "connectionInterrupted": "Verbindung unterbrochen"
   },
-  "error": {
-    "insufficientCredits": {
-      "title": "Unzureichende Agent-Guthaben",
-      "content": "Ihre Agent-Guthaben sind unzureichend, bitte abonnieren Sie eine Mitgliedschaft",
-      "okText": "OK"
-    }
-  },
   "agentNotice": {
     "title": "Hinweis",
     "description": "Dieser Agent befindet sich derzeit noch in der Testphase. Funktionen und Generierungsqualität werden fortlaufend optimiert, daher können Ergebnisse instabil sein oder nicht vollständig den Erwartungen entsprechen. Die entsprechenden Guthaben werden je nach tatsächlicher Nutzung normal verbraucht; Rückerstattungen oder Entschädigungen aufgrund unterschiedlicher Generierungsergebnisse sind derzeit nicht möglich. Wir empfehlen, zunächst in kleinem Umfang zu testen, bevor Sie über die weitere Nutzung entscheiden. Vielen Dank für Ihr Verständnis und Ihre Unterstützung.",
@@ -54,7 +47,6 @@
     "defaultImageGroup": "Standard-Bildgruppe",
     "defaultVideoGroup": "Standard-Videogruppe",
     "materialLibrary": "Medienbibliothek",
-    "affiliateReward": "68,40 $ verdienen",
     "imageMaterial": "Bilder",
     "videoMaterial": "Videos",
     "agentAssets": "KI-generierte Assets",
@@ -174,9 +166,6 @@
     "readyToPublish": "Bereit zur Veröffentlichung",
     "readyToPublishDesc": "Inhalt ist bereit und kann auf {{platform}} veröffentlicht werden.",
     "goPublish": "Zur Veröffentlichung",
-    "insufficientCredits": "Unzureichendes Guthaben",
-    "insufficientCreditsDesc": "Aufgabe pausiert. Bitte laden Sie Guthaben auf, um fortzufahren.",
-    "rechargeCredits": "Guthaben aufladen",
     "action": "Aktion",
     "actionDesc": "Bitte führen Sie die folgende Aktion aus",
     "continue": "Fortfahren"

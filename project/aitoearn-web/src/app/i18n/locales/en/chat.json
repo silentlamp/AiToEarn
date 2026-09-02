@@ -16,16 +16,9 @@
     "loadFailed": "Load failed",
     "connectionInterrupted": "Connection interrupted"
   },
-  "error": {
-    "insufficientCredits": {
-      "title": "Insufficient Agent Credits",
-      "content": "Your Agent credits are insufficient, please subscribe to a membership",
-      "okText": "OK"
-    }
-  },
   "agentNotice": {
     "title": "Friendly Reminder",
-    "description": "This Agent is still in testing. Its features and generation quality are being continuously improved, so results may be unstable or not fully meet expectations. Credits will be consumed normally based on actual usage, and refunds or compensation are not currently available for differences in generated results. We recommend trying a small amount first before deciding whether to continue. Thank you for your understanding and support.",
+    "description": "This Agent is still in testing. Its features and generation quality are being continuously improved, so results may be unstable or not fully meet expectations. We recommend trying a small amount first before deciding whether to continue. Thank you for your understanding and support.",
     "doNotShowAgain": "Do not show again",
     "cancel": "Cancel",
     "confirm": "Continue"
@@ -66,7 +59,6 @@
     "defaultImageGroup": "Default Image Group",
     "defaultVideoGroup": "Default Video Group",
     "materialLibrary": "Media Library",
-    "affiliateReward": "Earn $716.4",
     "imageMaterial": "Images",
     "videoMaterial": "Videos",
     "agentAssets": "AI Generated Assets",
@@ -191,9 +183,6 @@
     "readyToPublish": "Ready to Publish",
     "readyToPublishDesc": "Content is ready and can be published to {{platform}}.",
     "goPublish": "Go Publish",
-    "insufficientCredits": "Insufficient Credits",
-    "insufficientCreditsDesc": "Task paused. Please recharge credits to continue.",
-    "rechargeCredits": "Recharge Credits",
     "action": "Action",
     "actionDesc": "Please complete the following action",
     "continue": "Continue"

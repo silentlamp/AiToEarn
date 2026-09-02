@@ -174,7 +174,6 @@
     },
     "platformIncompatibleCount": "{{count}} incompatible",
     "timeLimitedModelTip": "Time-limited models are not guaranteed to be available. If unavailable, please try again later or switch to another model.",
-    "seedanceCreditsEstimateWarning": "Credit usage is only an estimate and may vary based on the actual result.",
     "draftModeOn": "Generate Draft",
     "draftModeOffVideo": "Generate Video",
     "draftModeOffImage": "Generate Image",
@@ -195,12 +194,7 @@
     "captionPromptSystemSectionTitle": "[Default Prompt - Lower Priority]",
     "copy": "Copy",
     "copySuccess": "Copied successfully",
-    "copyFailed": "Copy failed, please copy manually",
-    "insufficientSeedanceCredits": "This Seedance generation is estimated to use {{total}} dedicated credits. Your dedicated balance is {{balance}}, which is not enough. Please recharge and try again.",
-    "seedanceCreditsBadge": "Dedicated credits",
-    "seedanceCreditsUsageHint": "Seedance credits will be used first. Estimated use: {{total}}.",
-    "seedanceCreditsRecharge": "Recharge",
-    "seedanceCreditsInsufficientHint": "Not enough Seedance credits. Estimated: {{total}}, current: {{balance}}."
+    "copyFailed": "Copy failed, please copy manually"
   },
   "tabs": {
     "overview": "Overview",

@@ -18,13 +18,7 @@ function Header() {
           <span className={styles.logoText}>{t('header.logo')}</span>
         </div>
         <nav className={styles.nav}>
-          <a href="#marketplace" className={styles.navLink}>
-            {t('header.nav.marketplace')}
-          </a>
-          <a href="#pricing" className={styles.navLink}>
-            {t('header.nav.pricing')}
-          </a>
-          <a href="#docs" className={styles.navLink}>
+          <a href="https://docs.aitoearn.ai/" className={styles.navLink} target="_blank" rel="noopener noreferrer">
             {t('header.nav.docs')}
           </a>
           {/* <a href="#blog" className={styles.navLink}>{t('header.nav.blog')}</a> */}

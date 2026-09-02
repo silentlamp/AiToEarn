@@ -8,9 +8,9 @@
 
 简体中文 | [English](README_EN.md) | [日本語](README_JA.md)
 
-**Monetize · Publish · Engage · Create —— 一站式平台。**
+**Publish · Engage · Create —— 内部多频道运营平台。**
 
-AiToEarn 通过 **AI Agent自动化**，帮助 OPC（一人公司）、创作者、品牌与企业在全球主流平台上构建、分发并变现内容。
+本 fork 面向个人/内部使用：多频道 YouTube 与 TikTok 发布，AI 辅助内容创作。已移除计费、钱包、任务广场等商业化功能。
 
 支持渠道：
 抖音、小红书（Rednote）、快手、哔哩哔哩、视频号、公众号、TikTok、YouTube、Facebook、Instagram、Threads、Twitter（X）、Pinterest、LinkedIn
@@ -56,25 +56,18 @@ AiToEarn 通过 **AI Agent自动化**，帮助 OPC（一人公司）、创作者
 
 ## 核心功能
 
-AiToEarn 围绕内容创作者的完整变现链路，提供四大 Agent 能力：
+本 fork 提供三大核心能力，用于内部创作者运营：
 
-> **Monetize · Publish · Engage · Create**
+> **Publish · Engage · Create**
 
 ---
 
-### 💰 Monetize —— 内容赚钱
+### 内部创作者运营 —— 多频道发布
 
-AiToEarn 最核心的目标：**帮助每一位创作者赚钱**。
-
-创作者可以在平台出售内容以完成商家的推广任务。所有结算以结果为导向，我们提供三种结算模式：
-
-| 结算模式 | 全称 | 含义 |
-|---------|------|------|
-| **CPS** | Cost Per Sale | 按成交额结算 |
-| **CPE** | Cost Per Engagement | 按互动量结算 |
-| **CPM** | Cost Per Mille | 按播放量结算 |
-
-<img src="presentation/monetize-cn.png" width="30%">
+- **账号分组 (Spaces)**：每个细分 niche 一个分组（如 `life_hacks`、`ai_tools`）
+- **YouTube + TikTok**：每个 niche 绑定对应频道，日历排期发布
+- **内容再利用**：CN 源视频 → 英文配音 (KrillinAI) → AiToEarn 草稿 → 发布
+- 详见 [`INTERNAL_USE.md`](INTERNAL_USE.md) 与 [`ops/`](ops/)
 
 ---
 

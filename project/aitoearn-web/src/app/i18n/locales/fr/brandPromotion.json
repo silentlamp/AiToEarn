@@ -44,7 +44,6 @@
     },
     "platformIncompatibleCount": "{{count}} incompatible(s)",
     "timeLimitedModelTip": "Les modèles à durée limitée ne sont pas garantis disponibles. Si indisponible, réessayez plus tard ou passez à un autre modèle.",
-    "seedanceCreditsEstimateWarning": "La consommation de crédits n'est qu'une estimation et peut varier selon le résultat réel.",
     "generatingDraft": "Contenu en cours de génération",
     "generatingDrafts": "{{count}} contenus en cours de génération...",
     "generationDetailTitle": "Tâches de génération",
@@ -140,11 +139,7 @@
     "copy": "Copier",
     "copySuccess": "Copié avec succès",
     "copyFailed": "Échec de la copie, veuillez copier manuellement",
-    "insufficientSeedanceCredits": "Cette génération Seedance devrait utiliser {{total}} crédits dédiés. Votre solde dédié est de {{balance}}, ce qui est insuffisant. Rechargez puis réessayez.",
-    "seedanceCreditsBadge": "Crédits dédiés",
-    "seedanceCreditsUsageHint": "Les crédits Seedance seront utilisés en priorité. Estimation : {{total}}.",
-    "seedanceCreditsRecharge": "Recharger",
-    "seedanceCreditsInsufficientHint": "Crédits Seedance insuffisants. Estimé : {{total}}, actuel : {{balance}}."
+    "insufficientSeedanceCredits": "Cette génération Seedance devrait utiliser {{total}} crédits dédiés. Votre solde dédié est de {{balance}}, ce qui est insuffisant. Rechargez puis réessayez."
   },
   "createMaterial": {
     "title": "Create Material",

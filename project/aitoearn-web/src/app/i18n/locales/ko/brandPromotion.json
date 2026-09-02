@@ -44,7 +44,6 @@
     },
     "platformIncompatibleCount": "{{count}}개 비호환",
     "timeLimitedModelTip": "한시적 모델은 가용성이 보장되지 않습니다. 사용할 수 없는 경우 나중에 다시 시도하거나 다른 모델로 전환하세요.",
-    "seedanceCreditsEstimateWarning": "크레딧 소모는 추정치이며 실제 결과에 따라 다소 변동될 수 있습니다.",
     "generatingDraft": "콘텐츠 생성 중",
     "generatingDrafts": "{{count}}개 콘텐츠 생성 중...",
     "generationDetailTitle": "생성 작업",
@@ -140,11 +139,7 @@
     "copy": "복사",
     "copySuccess": "복사 성공",
     "copyFailed": "복사 실패, 직접 복사해 주세요",
-    "insufficientSeedanceCredits": "이번 Seedance 생성은 전용 크레딧 {{total}} 사용이 예상됩니다. 현재 전용 잔액은 {{balance}}로 부족합니다. 충전 후 다시 시도해 주세요.",
-    "seedanceCreditsBadge": "전용 크레딧",
-    "seedanceCreditsUsageHint": "Seedance 전용 크레딧을 우선 사용합니다. 예상 사용량: {{total}}.",
-    "seedanceCreditsRecharge": "충전",
-    "seedanceCreditsInsufficientHint": "Seedance 전용 크레딧이 부족합니다. 예상: {{total}}, 현재: {{balance}}."
+    "insufficientSeedanceCredits": "이번 Seedance 생성은 전용 크레딧 {{total}} 사용이 예상됩니다. 현재 전용 잔액은 {{balance}}로 부족합니다. 충전 후 다시 시도해 주세요."
   },
   "createMaterial": {
     "title": "Create Material",

@@ -5,22 +5,6 @@
   "login": "Connexion",
   "support": "Support",
   "settings": "Paramètres",
-  "vip": "Plus",
-  "vip.tier": {
-    "free": "Gratuit",
-    "trialing": "Essai",
-    "go": "Go",
-    "plus": "Plus",
-    "ultra": "Ultra",
-    "fortune": "Membre Fortune",
-    "treasure": "Membre Treasure"
-  },
-  "subscribe": "Mettre à niveau",
-  "balance": "Crédits",
-  "recharge": "Recharger",
-  "adBalance": "Solde annonceur",
-  "creatorBalance": "Solde créateur",
-  "withdrawable": "Retirable",
   "plugin": "Extension",
   "pluginStatus": {
     "notInstalled": "Installer",
@@ -51,7 +35,15 @@
   "yes": "Oui",
   "no": "Non",
   "calendar": {
-    "weekDaysShort": ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"],
+    "weekDaysShort": [
+      "Dim",
+      "Lun",
+      "Mar",
+      "Mer",
+      "Jeu",
+      "Ven",
+      "Sam"
+    ],
     "monthSuffix": ""
   },
   "actions": {
@@ -81,32 +73,12 @@
   },
   "header": {
     "messages": "Messages",
-    "income": "Historique des revenus",
-    "wallet": "Mon portefeuille",
     "materialLibrary": "Bibliothèque",
     "draftBox": "Gestion de contenu",
     "agentAssets": "Ressources générées par l'IA",
     "draftBoxSeoTitle": "Gestion de contenu - Création par lots IA et éditeur de brouillons",
     "draftBoxSeoDescription": "Gérez tous vos brouillons de contenu en un seul endroit. Utilisez l'IA pour générer des publications par lots et organisez la distribution multi-plateformes avec AiToEarn.",
     "draftBoxSeoKeywords": "gestion de contenu, éditeur de brouillons, génération de contenu IA, création par lots, brouillons réseaux sociaux, AiToEarn"
-  },
-  "tasks": "Marché",
-  "signIn": {
-    "title": "Connexion quotidienne pour gagner des points",
-    "myPoints": "Mes points",
-    "signIn": "Se connecter",
-    "today": "Aujourd'hui",
-    "rules": "Règles de connexion",
-    "rules1": "Connexions consécutives 1-7 jours, 1 point par jour",
-    "rules2": "Connexions consécutives 8-21 jours, 2 points par jour",
-    "rules3": "Connexions consécutives 22 jours ou plus, 3 points par jour",
-    "signedIn": "Connecté",
-    "notSignedIn": "Non connecté",
-    "signInSuccess": "Connexion réussie",
-    "signInFailed": "Échec de la connexion",
-    "alreadySignedIn": "Déjà connecté aujourd'hui",
-    "consecutiveDays": "Jours consécutifs",
-    "totalPoints": "Points totaux"
   },
   "downloadApp": {
     "title": "Télécharger {{appName}}",
@@ -186,15 +158,6 @@
       "importantNoteContent": "Les données ne peuvent pas être récupérées après la suppression. Veuillez procéder avec prudence. Certaines données requises par la loi peuvent ne pas être supprimables."
     }
   },
-  "lowBalanceAlert": {
-    "title": "Alerte de solde bas",
-    "content": "Votre solde de crédits est faible. Veuillez recharger pour continuer à utiliser nos services.",
-    "neverRemind": "Ne plus me rappeler"
-  },
-  "announcementBanner": {
-    "seedancePromo": "seedance-2.0 à partir de 0,03$/sec",
-    "videoPromo": "Offre limitée : seedance à partir de 0,36 yuan par seconde, gpt-image-2 à partir de 0,07 yuan par image"
-  },
   "chinaDomainPrompt": {
     "title": "Passer à la région Chine",
     "content": "Votre emplacement a été détecté en Chine. Passer au domaine chinois pour une meilleure expérience ?",
@@ -261,8 +224,6 @@
     "openInBrowser": "Ouvrir dans le navigateur",
     "description": "Le webview WeChat ou Alipay peut limiter la publication et les redirections. Continuez dans votre navigateur."
   },
-  "seedanceCredits": "Crédits Seedance",
-  "seedanceCreditsRecharge": "Recharger les crédits Seedance",
   "configManagement": "Configuration",
   "apiErrorConfigTip": "Veuillez vérifier que votre configuration est correcte.",
   "apiErrorConfigAction": "Voir la configuration"
